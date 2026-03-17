@@ -1,0 +1,29 @@
+name: IsClaude2xMenuBar
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+targets:
+  IsClaude2xMenuBar:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Sources/IsClaude2xMenuBar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.christopherjones.isclaude2x.menubar
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: IsClaude2x
+        INFOPLIST_KEY_LSUIElement: YES
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+  IsClaude2xMenuBarTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Tests/IsClaude2xMenuBarTests
+    dependencies:
+      - target: IsClaude2xMenuBar
