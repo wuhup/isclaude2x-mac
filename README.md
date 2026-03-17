@@ -2,6 +2,8 @@
 
 Native macOS status bar app for [isclaude2x.com](https://isclaude2x.com).
 
+![Menu bar screenshot](docs/screenshot.png)
+
 The app lives in the menu bar and shows:
 
 - `yes` in green when `https://isclaude2x.com/short` returns `yes`
